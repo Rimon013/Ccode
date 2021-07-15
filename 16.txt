@@ -1,0 +1,13 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int x,t;
+   scanf("%d\n",&x);
+   t=x*2;
+   printf("%d minutos\n",t);
+ 
+    return 0;
+}

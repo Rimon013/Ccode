@@ -1,0 +1,17 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    float A,B,C,T,Ci,Tr,S,R;
+    scanf("%f %f %f\n",&A,&B,&C);
+    T=0.5*(A*C);
+    Ci=3.14159*C*C;
+    Tr=0.5*(A+B)*C;
+    S=B*B;
+    R=A*B;
+    printf("TRIANGULO: %.3f\nCIRCULO: %.3f\nTRAPEZIO: %.3f\nQUADRADO: %.3f\nRETANGULO: %.3f\n",T,Ci,Tr,S,R);
+ 
+    return 0;
+}

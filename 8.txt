@@ -1,0 +1,16 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int n,h;
+   float a,s;
+   scanf("%d %d\n",&n,&h);
+   scanf("%f\n",&a);
+   s=a*h;
+   printf("NUMBER = %d\n",n);
+   printf("SALARY = U$ %.2f\n",s);
+ 
+    return 0;
+}

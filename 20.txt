@@ -1,0 +1,19 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    
+    int N,t,t1,y,y1,z,z1;
+    scanf("%d\n",&N);
+    t=N/365;
+    t1=N%365;
+    printf("%d ano(s)\n",t);
+    y=t1/30;
+    y1=t1%30;
+    printf("%d mes(es)\n",y);
+    printf("%d dia(s)\n",y1);
+ 
+    return 0;
+}

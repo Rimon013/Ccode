@@ -1,0 +1,65 @@
+#include <iostream>
+#include<cmath>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    double a[3];
+    double temp,A,B,C,A2,B2,C2;
+    for(int i =0;i<3;i++)
+    {
+        scanf("%lf",&a[i]);
+    }
+    for(int i=0;i<2;i++)
+    {
+        for(int j=i+1;j<3;j++)
+        {
+            if(a[i]<a[j])
+            {
+                temp=a[j];
+                a[j]=a[i];
+                a[i]=temp;
+            }
+        }
+    }
+    A=a[0];
+    B=a[1];
+    C=a[2];
+    A2=pow(A,2);
+    B2=pow(B,2);
+    C2=pow(C,2);
+   if (A>0&&B>0&&C>0)
+   {
+       
+           if(A>=B+C)
+           {
+               printf("NAO FORMA TRIANGULO\n");
+           }
+           else
+           {
+               if(A2==B2+C2)
+           {
+               printf("TRIANGULO RETANGULO\n");
+           }
+           if(A2>B2+C2)
+           {
+               printf("TRIANGULO OBTUSANGULO\n");
+           }
+           if(A2<B2+C2)
+           {
+               printf("TRIANGULO ACUTANGULO\n");
+           }
+           if((A==B)&&(B==C))
+           {
+               printf("TRIANGULO EQUILATERO\n");
+           }
+           if((A==B&&B!=C)||(A==C&&C!=B)||(B==C&&C!=A))
+           {
+               printf("TRIANGULO ISOSCELES\n");
+           }
+       
+           }
+   }
+ 
+    return 0;

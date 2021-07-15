@@ -1,0 +1,35 @@
+#include <iostream>
+#include<cmath>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    float a[6]={100.00,50.00,20.00,10.00,5.00,2.00};
+    float ar[5]={1.00,0.50,0.25,0.10,0.05};
+    int y,y1;
+    float N,t,t1;
+    scanf("%f\n",&N);
+    printf("NOTAS:\n");
+    for(int i=0;i<6;i++)
+    {
+        y=N/a[i];
+        t=fmod(N,a[i]);
+        printf("%d nota(s) de R$ %.2f\n",y,a[i]);
+        N=t;
+    }
+    printf("MOEDAS:\n");
+    for(int i=0;i<5;i++)
+    {
+        y1=N/ar[i];
+        t1=fmod(N,ar[i]);
+        printf("%d moeda(s) de R$ %.2f\n",y1,ar[i]);
+        N=t1;
+    }
+    float y2 = round(N/0.01);
+    int l = y2;
+    printf("%d moeda(s) de R$ 0.01\n",l);
+    
+   
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int a,b,c,MaiorAB,MaiorABC;
+    scanf("%d %d %d",&a,&b,&c);
+    MaiorAB=((a+b+abs(a-b))/2);
+    MaiorABC=((c+MaiorAB+abs(c-MaiorAB))/2);
+    printf("%d eh o maior\n",MaiorABC);
+    
+    
+ 
+    return 0;
+}

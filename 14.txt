@@ -1,0 +1,15 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int X;
+   float Y,avg;
+   scanf("%d %f\n",&X,&Y);
+   avg=X/Y;
+   printf("%.3f km/l\n",avg);
+   
+ 
+    return 0;
+}

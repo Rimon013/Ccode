@@ -1,0 +1,15 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int p1,u1,p2,u2;
+   float s1,s2,t;
+   scanf("%d %d %f\n",&p1,&u1,&s1);
+   scanf("%d %d %f\n",&p2,&u2,&s2);
+   t=(s1*u1)+(s2*u2);
+   printf("VALOR A PAGAR: R$ %.2f\n",t);
+ 
+    return 0;
+}

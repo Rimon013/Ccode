@@ -1,0 +1,13 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    float A,B,MEDIA,AVG;
+    scanf("%f %f\n",&A,&B);
+    AVG=(A*3.5)+(B*7.5);
+    MEDIA=AVG/11;
+    printf("MEDIA = %.5f\n",MEDIA);
+    return 0;
+}
